@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./variables";
+
+
+html, body { width: 100%; height: 100%;}
+
+body { background:url("../assets/background.jpg"); }
+
+.box
+{
+	padding:80px 40px;
+	background:rgba(0,0,0,0.2);
+	& h2 {
+		margin:0;
+		padding:0 0 20px;
+		color:rgb(255, 255, 255) !important;
+	}
+	& table {
+		color: #FFF;
+	}
+}
+
+.user
+{
+	width: 35px;
+    height: 35px;
+	border-radius:50%;
+}
+
+zag-item {
+    display: contents;
+}
+
+.valid-feedback, .invalid-feedback {
+	display: inherit
+}

@@ -1,0 +1,10 @@
+<tr>
+    <th scope="row">
+        <a href="#" class="mr-2" [routerLink]="['/register', register.id]"><i class="fas fa-pencil-alt"></i></a>
+        <a href="#" (click)="remove()"><i class="fas fa-trash-alt"></i></a>
+    </th>
+    <td>{{register.name}}</td>
+    <td>{{register.limit | currency: 'BRL': 'symbol'}}</td>
+    <td class="text-center">{{getRisk()?.name}}</td>
+    <td class="text-center">{{getRisk()?.tax | percent}}</td>
+</tr>

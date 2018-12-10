@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand text-uppercase font-weight-bold">{{ title }}</a>
+	<button class="navbar-toggler" type="button">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" routerLinkActive="active" [routerLink]="['/register']">Cadastro</a>
+			</li>
+		</ul>
+		<span class="navbar-text">
+			Bem vindo {{ title }}!
+		</span>
+	</div>
+</nav>

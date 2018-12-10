@@ -1,0 +1,45 @@
+{
+  "risks": [
+    {
+      "id": 1,
+      "name": "A",
+      "tax": 0
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "tax": 0.1
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "tax": 0.2
+    }
+  ],
+  "registers": [
+    {
+      "id": 1,
+      "name": "Danillo",
+      "limit": "3400",
+      "riskId": 3
+    },
+    {
+      "id": 2,
+      "name": "Silveira",
+      "limit": "90000",
+      "riskId": 1
+    },
+    {
+      "id": 3,
+      "name": "Santana",
+      "limit": "87777",
+      "riskId": 3
+    },
+    {
+      "id": 4,
+      "name": "DNS",
+      "limit": "877",
+      "riskId": 2
+    }
+  ]
+}

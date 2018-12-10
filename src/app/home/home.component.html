@@ -1,0 +1,27 @@
+<div class="row mt-4">
+	<div class="col-md-12 box">
+		<header>
+			<h2>Clientes</h2>
+		</header>
+		<h5 class="m-0" *ngIf="!open()">Nenhum registro encontrado</h5>
+		<div class="table-responsive" *ngIf="open()">
+			<table class="table table-striped align-items-center m-0" >
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Nome</th>
+						<th scope="col">Limite de crédito</th>
+						<th scope="col" class="text-center">Risco</th>
+						<th scope="col" class="text-center">Taxa de Juros</th>
+					</tr>
+				</thead>
+				<tbody>
+					<zag-item *ngFor="let register of registers()" 
+						[register]="register" (removeEvent)="remove(register)"></zag-item>
+				</tbody>
+			</table>
+		</div>
+		<button type="button" class="btn btn-secundary mt-4" [routerLink]="['/register']">Adicionar</button>
+	</div>
+	<router-outlet></router-outlet>
+</div>
